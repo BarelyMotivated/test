@@ -1,0 +1,34 @@
+float jump  = 2; 
+float speed = 10;.
+
+Bool grounded;
+
+xdir = get.position.x;
+ydir = get.position.y;
+
+
+if(get.keydown.getkey(D) 
+{
+  Get.Object.Tag<"Player">;
+  xdir.x * Speed +1;
+}
+
+if(get.keydown.getkey(A)
+{
+Get.Object.Tag<"Player">;
+ xdir.x * Speed -1
+}
+
+if (get.keydown.getkey(Space) && grounded = true)
+{
+get.component.RigidBody2D;
+
+if(grounded == false)
+{
+Get.Gameobject.Tag("Ground") = false;
+}
+
+if (grounded == true)
+{
+  Get.Gameobject.Tag("Ground") = true; 
+}
